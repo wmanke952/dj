@@ -115,9 +115,7 @@ async function startBot() {
     console.error("❌ Erro no player:", error);
   });
 
-  client.login(
-    "MTM1ODA5MjQ0MzU3MTk3ODQzMQ.G17-1P.1Ug4z3CDauJYCg8nrBChEcBYEvZPPrPSaO29Q0",
-  );
+  client.login(process.env.DISCORD_TOKEN);
 }
 
 startBot();
